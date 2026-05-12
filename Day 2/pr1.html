@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>SOU Student Portal</h1>
+        <h2><u>Student Registration</u></h2>
+    </header>
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+    <br>
+    <main>
+        <article>
+            <form>
+                <table cellpadding="8">
+                    <tr>
+                        <td>Name :</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Enrollment :</td>
+                        <td><input type="number" name="enrollment"></td>
+                    </tr>
+                    <tr>
+                        <td>Branch :</td>
+                        <td>
+                            <select>
+                                <option>Select Branch</option>
+                                <option>Computer</option>
+                                <option>IT</option>
+                                <option>Mechanical</option>
+                                <option>Civil</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Division :</td>
+                        <td><input type="text" maxlength="1"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender :</td>
+                        <td>
+                            <input type="radio" name="gender"> Male
+                            <input type="radio" name="gender"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mobile No :</td>
+                        <td><input type="tel" maxlength="10"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email ID :</td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password :</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td>Photo :</td>
+                        <td><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <td>Remarks :</td>
+                        <td><textarea rows="4" cols="25"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Submit">
+                        </td>
+                        <td>
+                            <input type="reset" value="Clear">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </article>
+    </main>
+    <br>
+    <footer>
+        <p>© 2026 Student Registration System</p>
+    </footer>
+</body>
+</html>
