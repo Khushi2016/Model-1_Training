@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Position Effect</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial;
+            overflow:hidden;
+        }
+
+        /* Video Background */
+        video{
+            position:fixed;
+            right:0;
+            bottom:0;
+
+            min-width:100%;
+            min-height:100%;
+
+            object-fit:cover;
+            z-index:-1;
+        }
+
+        /* Text Content */
+        .content{
+            height:100vh;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+
+            color:white;
+            text-align:center;
+        }
+
+        h1{
+            font-size:70px;
+            background:rgba(0,0,0,0.5);
+            padding:20px 40px;
+            border-radius:15px;
+        }
+
+        p{
+            margin-top:20px;
+            font-size:25px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Video -->
+    <video autoplay muted loop>
+        <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+    </video>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>Video Background Effect</h1>
+        <p>HTML + CSS Positioning</p>
+    </div>
+
+</body>
+</html>
