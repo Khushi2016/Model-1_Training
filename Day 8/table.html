@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tailwind Search Table</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100 p-10">
+
+  <!-- Heading -->
+
+  <h1 class="text-5xl font-bold text-center mb-10 text-blue-600 animate-bounce">
+    Student Table
+  </h1>
+
+  <!-- Search Box UI -->
+
+  <div class="flex justify-center mb-8">
+
+    <input type="text"
+      placeholder="Search Student..." class="border border-gray-400 rounded-xl px-5 py-3 w-80 shadow-md focus:outline-none focus:ring-4 focus:ring-blue-400 transition duration-300">
+
+  </div>
+
+  <!-- Table -->
+
+  <div class="overflow-x-auto rounded-xl shadow-xl">
+
+    <table class="table-auto w-full bg-white">
+
+      <!-- Table Head -->
+
+      <thead class="bg-blue-600 text-white text-lg">
+
+        <tr>
+          <th class="p-4 border">ID</th>
+          <th class="p-4 border">Name</th>
+          <th class="p-4 border">Course</th>
+          <th class="p-4 border">City</th>
+        </tr>
+
+      </thead>
+
+      <!-- Table Body -->
+
+      <tbody>
+
+        <tr class="text-center hover:bg-orange-100 transition duration-300">
+          <td class="p-4 border">1</td>
+          <td class="p-4 border">Khushi</td>
+          <td class="p-4 border">AI & ML</td>
+          <td class="p-4 border">Ahmedabad</td>
+        </tr>
+
+        <tr class="text-center hover:bg-green-100 transition duration-300">
+          <td class="p-4 border">2</td>
+          <td class="p-4 border">Naman</td>
+          <td class="p-4 border">Web Development</td>
+          <td class="p-4 border">Surat</td>
+        </tr>
+
+        <tr class="text-center hover:bg-pink-100 transition duration-300">
+          <td class="p-4 border">3</td>
+          <td class="p-4 border">Priya</td>
+          <td class="p-4 border">Data Science</td>
+          <td class="p-4 border">Rajkot</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
